@@ -1,0 +1,48 @@
+body {
+    background-image: url('imgs/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.calculator {
+    width: 50%;
+    height: 750px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: antiquewhite;
+    border: 3px solid grey;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.calc-view {
+    width: 75%;
+    height: 200px;
+    background-color: white;
+    border: 3px solid grey;
+    border-radius: 3px;
+}
+
+.calc-buttons {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-gap: 8px;
+}
+
+.c-btn {
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border: 3px solid grey;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
