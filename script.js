@@ -2,7 +2,8 @@ let a;
 let b;
 let operator = "=";
 
-// operate() 
+// operate() recieves the operator and matches it up to the corresponding function
+// for example, if the operator is "+" then the add function should run
 function operate(a, b, operator) {
     if (operator === "+") {
         return add(a, b);
