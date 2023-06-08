@@ -1,6 +1,17 @@
-let a;
+let a = document.querySelectorAll('.cb-num');
+console.log(a);
 let b;
 let operator = "=";
+
+let disp = document.querySelector('.calc-view');
+let view = document.createTextNode("<YOUR_CONTENT>");
+disp.appendChild(view);
+
+function display(a, b, operator) {
+    let view = document.createTextNode("<YOUR_CONTENT>");
+    disp.appendChild(view);
+}
+
 
 // operate() recieves the operator and matches it up to the corresponding function
 // for example, if the operator is "+" then the add function should run
@@ -47,3 +58,4 @@ function divide(a, b) {
 
 
 
+a.addEventListener('click', display);
