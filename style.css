@@ -51,10 +51,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 28px;
 }
 
-.b-last {
+.cb-top, .cb-last, .cb-decimal {
+    border-color: black;
+}
+
+.cb-top, .cb-decimal {
+    background-color: peru;
+}
+
+.cb-last {
+    color: white;
+    background-color: rgb(77, 43, 21);
     grid-column: 4 / span 2;
+}
+
+.cb-last, .cb-decimal {
+    font-size: 40px;
+}
+
+.cb-zero {
+    grid-column: 1 / span 2;
 }
 
 .c-btn:hover {background-color: blanchedalmond;}
